@@ -1,5 +1,5 @@
 import axios from 'shared/libs/axios';
-export type UserType = {
+type UserType = {
   loginId: string;
   passwd: string;
 };

@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = {
   devServer: {
     host: 'pc.bnet.com',
-    port: 8088,
+    port: 5500,
   },
   plugins: [
     {
