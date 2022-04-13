@@ -266,13 +266,39 @@ export const UtilityRoutes: RouteType[] = [
   },
   {
     path: 'consumer',
-    label: '개인회원가입',
+    label: '약관동의(사업자)',
     element: (
       <Loader
         route={{
           label: 'home',
           layout: 'studio',
           element: React.lazy(() => import('~/pages/SignUp/Consumer')),
+        }}
+      />
+    ),
+  },
+  {
+    path: 'confirm',
+    label: '보호자인증화면',
+    element: (
+      <Loader
+        route={{
+          label: 'home',
+          layout: 'studio',
+          element: React.lazy(() => import('~/pages/SignUp/Confirm')),
+        }}
+      />
+    ),
+  },
+  {
+    path: 'exist',
+    label: '기 가입 안내 (사업자)',
+    element: (
+      <Loader
+        route={{
+          label: 'home',
+          layout: 'studio',
+          element: React.lazy(() => import('~/pages/SignUp/Exist')),
         }}
       />
     ),

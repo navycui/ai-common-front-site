@@ -92,9 +92,7 @@ $ sudo vi /etc/hosts
 
 # 사용자 지원 포털
 $ yarn usp start
-# windows user 
-$ yarn usp craco start
-$ yarn usp craco build
+
 # 스토리북
 $ yarn storybook
 ```

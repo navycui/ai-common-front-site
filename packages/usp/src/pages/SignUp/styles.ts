@@ -5,7 +5,24 @@ export const container = css`
   background-color: #1f2437;
   height: 100vh;
 `;
+export const backPass = css`
+position: absolute;
+top: 40px;
+left: 0;
+  &:before{
+    content:'';
+    display: inline-block;
+    background: url('/images/common/pass_left.png');
+    width: 7px;
+    height: 14px;
+    margin-right: 16.5px;
+  }
+  @media (min-width: 320px) and (max-width: 1000px) {
+    display: none;
+  }
+`;
 export const content = css`
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   color: #fff;
@@ -59,6 +76,14 @@ export const content = css`
       }
       > p {
         letter-spacing: -0.4px;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 1000px) {
+    padding: 40px 15px;
+    .tit {
+      h1 {
+      font-size: 32px;
       }
     }
   }
