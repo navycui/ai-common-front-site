@@ -232,7 +232,7 @@ export const ServiceRoutes: RouteType[] = [
     children: [
       {
         path: 'e1',
-        label: '서비스안내',
+        label: '서비스안내1',
         element: (
           <Loader
             route={{
