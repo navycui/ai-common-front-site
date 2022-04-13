@@ -5,29 +5,12 @@ export const container = css`
   background-color: #1f2437;
   height: 100vh;
 `;
-export const backPass = css`
-position: absolute;
-top: 40px;
-left: 0;
-  &:before{
-    content:'';
-    display: inline-block;
-    background: url('/images/common/pass_left.png');
-    width: 7px;
-    height: 14px;
-    margin-right: 16.5px;
-  }
-  @media (min-width: 320px) and (max-width: 1000px) {
-    display: none;
-  }
-`;
 export const content = css`
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   color: #fff;
-  padding: 200px 80px;
-  max-width: 1260px;
+  padding: 200px 0;
+  max-width: 1100px;
   margin: 0 auto;
   .tit {
     h1 {
@@ -55,36 +38,13 @@ export const content = css`
       margin: 0;
     }
   }
-  & .MuiGrid-root{
-    margin-left: 0;
-  }
   & .MuiGrid-item{
-    display: flex;
-    padding-left: 0;
-    .img {
-      img{
-        width:100px;
-        height: 100px;
-      }
-      margin-right: 20px;
+    > div {
+      font-size: 18px;
+      font-weight: bold;
     }
-    .cont {
-      margin-top: 22px;
-      > div {
-        font-size: 18px;
-        font-weight: bold;
-      }
-      > p {
-        letter-spacing: -0.4px;
-      }
-    }
-  }
-  @media (min-width: 320px) and (max-width: 1000px) {
-    padding: 40px 15px;
-    .tit {
-      h1 {
-      font-size: 32px;
-      }
+    > p {
+      letter-spacing: -0.4px;
     }
   }
 `;

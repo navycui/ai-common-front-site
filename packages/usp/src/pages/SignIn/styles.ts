@@ -26,14 +26,6 @@ export const content = css`
       letter-spacing: -0.6px;
     }
   }
-  @media (min-width: 320px) and (max-width: 1000px) {
-    padding: 40px 15px;
-    .tit {
-      h1 {
-      font-size: 32px;
-      }
-    }
-  }
 `;
 export const signinput = css`
   & .MuiInputLabel-root {

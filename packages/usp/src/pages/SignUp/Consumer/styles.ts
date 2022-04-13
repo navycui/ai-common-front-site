@@ -5,28 +5,10 @@ export const container = css`
   background-color: #1f2437;
   height: 100vh;
 `;
-
-export const backPass = css`
-position: absolute;
-top: 40px;
-left: 0;
-  &:before{
-    content:'';
-    display: inline-block;
-    background: url('/images/common/pass_left.png');
-    width: 7px;
-    height: 14px;
-    margin-right: 16.5px;
-  }
-  @media (min-width: 320px) and (max-width: 1000px) {
-    display: none;
-  }
-`;
 export const content = css`
-  position: relative;
   color: #fff;
-  padding: 100px 160px;
-  max-width: 1260px;
+  padding: 200px 0;
+  max-width: 1100px;
   margin: 0 auto;
   .tit {
     h1 {
@@ -50,11 +32,9 @@ export const content = css`
   
   .MuiStepLabel-label.Mui-active,.MuiStepLabel-label.Mui-completed{
     color: #1CCDCC;
-    border: none;
   }
   .MuiStepIcon-root.Mui-completed,.MuiStepIcon-root.Mui-active{
     color: #1CCDCC;
-    border: none;
     .MuiStepIcon-text{
       font-weight: bold;
     }
@@ -67,26 +47,15 @@ export const content = css`
       border-bottom: 1px solid #515668;
       padding: 10px 0;
     }
-    span.gt{
-      &:after{
-        content:'';
-        display: inline-block;
-        background: url('/images/common/pass_right.png') no-repeat;
-        width: 5px;
-        height: 12px;
-        margin-left: 10px;
-        padding-right: 15px;
-      }
-      &.blue {
-        color: #1CCDCC;
-      }
-      &.gray {
-        color: #707070;
-      }
-    }
   }
-  .MuiCheckbox-root, .MuiInputLabel-root, .MuiFormControlLabel-root{
+  .MuiCheckbox-root{
     color: #fff;
+  }
+  .MuiFormControlLabel-root{
+    color: #fff;
+  }
+  .MuiInputLabel-root{
+    color:#fff;
   }
   .MuiStepIcon-root{
     border: 1px solid #fff;
@@ -103,14 +72,6 @@ export const content = css`
   }
   .Mui-checked{
     color: #fff;
-  }
-  @media (min-width: 320px) and (max-width: 1000px) {
-    padding: 40px 15px;
-    .tit {
-      h1 {
-      font-size: 32px;
-      }
-    }
   }
 `;
 
@@ -151,9 +112,6 @@ export const singTextbox = css`
       }
     }
   }
-  .MuiFormLabel-asterisk{
-    color: #1CCDCC;
-  }
 `;
 
 export const btnGroup = css`
@@ -165,38 +123,9 @@ export const btnGroup = css`
     font-size: 18px;
     font-weight: bold;
     line-height: 1.5; 
-    background-color: #4063EC;
     &.linebtn {
       border: 1px solid #fff;
       background-color: #1f2437;
     }
-  }
-`;
-export const modalpop = css`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 780px;
-  background-color: #fff;
-  box-shadow: 24;
-  padding: 40px;
-  border-radius: 20px;
-  h2 {
-    font-size: 20px; 
-    font-weight: bold;
-    > button{
-      color: #707070;
-      position: absolute;
-      right: 20px;
-    }
-  }
-  p{
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 16px;
-    height: 400px;
-    overflow: auto;
   }
 `;

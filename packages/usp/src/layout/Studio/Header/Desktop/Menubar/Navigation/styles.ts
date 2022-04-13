@@ -21,15 +21,15 @@ export const menu = css`
       &.active{
         color: blue;
       }
-      &:hover{
-
+      &:hover > ul{
+        
       }
       > ul {
-        display: flex;
+        display: none;
         position: absolute;
         bottom: -40px;
         left: 0;
-        background-color: #ccc;
+        // background-color: #ccc;
         height: 40px;
         justify-content: center;
         width: 100%;
@@ -44,4 +44,8 @@ export const menu = css`
       }
     }
   }
+`;
+
+export const show = css`
+  display: none
 `;
