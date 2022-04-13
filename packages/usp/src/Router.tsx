@@ -25,7 +25,7 @@ function middleware(route: RouteType, type: MiddlewareType[]) {
 export const ServiceRoutes: RouteType[] = [
   {
     path: 'a',
-    label: '공고알림',
+    label: '공고알림1',
     children: [
       middleware(
         {
