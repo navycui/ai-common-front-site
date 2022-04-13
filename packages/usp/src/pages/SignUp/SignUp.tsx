@@ -8,6 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { NavLink } from 'react-router-dom';
+//FRN-0010101_회원가입_회원유형 선택
 
 const Conts = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -21,6 +22,9 @@ function SignUp() {
   return (
     <section css={styles.container}>
       <div css={styles.content}>
+        <NavLink to={'/'} css={styles.backPass}>
+          이전 화면으로 돌아가기
+        </NavLink>
         <Box sx={{ flex: 2, mr: 4 }}>
           <div className="tit">
             <h1>AICA 회원가입</h1>
